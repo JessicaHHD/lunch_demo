@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>今天吃啥 · 午饭推荐助手 Demo</title>
+  <meta name="description" content="按口味、忌口、少油和不重复规则，每天中午给出 3 个午饭选项的推荐助手 Demo" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="stage">
+    <aside class="side">
+      <div class="side-kicker">产品 Demo</div>
+      <h2>今天吃啥</h2>
+      <p>给一个人在办公室吃午饭的用户：设置一次偏好，以后每天直接从 3 个选项里挑。</p>
+      <ol>
+        <li>在「偏好」里用一句话或勾选设置口味和忌口</li>
+        <li>查看今日 3 个推荐，可「换一个」</li>
+        <li>点「就它了」，再点「模拟到下一天」</li>
+        <li>验证昨天吃过的主菜（含其他店同款）不会再出现</li>
+      </ol>
+      <p class="side-foot">数据为模拟数据；AI 能力当前为本地模拟，已预留 /api/ai 接口。</p>
+    </aside>
+    <div class="phone">
+      <div id="app"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
